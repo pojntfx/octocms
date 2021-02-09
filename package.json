@@ -1,0 +1,27 @@
+{
+  "name": "@pojntfx/octocms",
+  "version": "0.0.1-alpha1",
+  "description": "A minimal headless CMS which edits a JSON file in a GitHub repository.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pojntfx/octocms.git"
+  },
+  "author": "Felicitas Pojtinger <felicitas@pojtinger.com>",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/pojntfx/octocms/issues"
+  },
+  "homepage": "https://github.com/pojntfx/octocms#readme",
+  "dependencies": {
+    "next": "^10.0.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
