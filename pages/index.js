@@ -1,6 +1,8 @@
-import { useState, useEffect } from "react";
 import { Octokit } from "@octokit/core";
+import { Box, Button } from "rebass";
+import { Textarea } from "@rebass/forms";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 function HomePage() {
   const [contents, setContents] = useState("");
@@ -23,7 +25,15 @@ function HomePage() {
     }
   }, [router.query]);
 
-  return <textarea value={contents}></textarea>;
+  return (
+    <Box>
+      <Textarea value={contents} />
+
+      <Button variant="primary" mt={2}>
+        Save
+      </Button>
+    </Box>
+  );
 }
 
 export default HomePage;
